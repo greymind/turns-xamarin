@@ -1,4 +1,4 @@
-﻿/src/Greymind.Turns/**/bin
-/src/Greymind.Turns/**/obj
+﻿/src/**/bin
+/src/**/obj
 **/*.suo
-packages
+/src/packages
