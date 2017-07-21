@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greymind.Turns.Android", "Greymind.Turns.Android\Greymind.Turns.Android.csproj", "{B7919F01-1F62-4150-BC60-505064E5147E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greymind.Turns.Android", "Greymind.Turns.Android\Greymind.Turns.Android.csproj", "{0228326A-72B8-4922-B9FD-77F6D4F6352E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B7919F01-1F62-4150-BC60-505064E5147E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7919F01-1F62-4150-BC60-505064E5147E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7919F01-1F62-4150-BC60-505064E5147E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{B7919F01-1F62-4150-BC60-505064E5147E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7919F01-1F62-4150-BC60-505064E5147E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7919F01-1F62-4150-BC60-505064E5147E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0228326A-72B8-4922-B9FD-77F6D4F6352E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0228326A-72B8-4922-B9FD-77F6D4F6352E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0228326A-72B8-4922-B9FD-77F6D4F6352E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0228326A-72B8-4922-B9FD-77F6D4F6352E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0228326A-72B8-4922-B9FD-77F6D4F6352E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0228326A-72B8-4922-B9FD-77F6D4F6352E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
