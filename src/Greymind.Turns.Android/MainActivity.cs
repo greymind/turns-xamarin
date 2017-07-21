@@ -4,48 +4,37 @@ using Android.OS;
 using Android.Support.V4.View;
 using System.Collections.Generic;
 using System;
+using com.refractored;
+using Android.Util;
+using Android.Support.V7.App;
 
 namespace Greymind.Turns.Android
 {
-    [Activity(Label = "Greymind Turns", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "Greymind Turns", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.AppCompat.Light")]
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
             SetContentView(Resource.Layout.Main);
 
-            var viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
-            viewPager.Adapter = new TabsPagerAdapter(this);
+            //var toolbar = FindViewById<Toolbar>(Resource.Id.Toolbar);
+            //SetActionBar(toolbar);
 
-            var groupsTab = ActionBar.NewTab();
-            groupsTab.SetText("Groups");
-            groupsTab.TabSelected += (sender, args) =>
-            {
-                if (viewPager.CurrentItem != 0)
-                    viewPager.CurrentItem = 0;
-            };
+            //ActionBar.SetTitle(Resource.String.ApplicationName);
 
-            ActionBar.AddTab(groupsTab);
+            var titles = new[] { "Groups", "Activity" };
+            var adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, titles);
 
-            var activityTab = ActionBar.NewTab();
-            activityTab.SetText("Activity");
-            activityTab.TabSelected += (sender, args) =>
-            {
-                if (viewPager.CurrentItem != 1)
-                    viewPager.CurrentItem = 1;
-            };
+            var viewPager = FindViewById<ViewPager>(Resource.Id.ViewPager);
+            viewPager.PageMargin = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
+            viewPager.OffscreenPageLimit = titles.Length;
+            viewPager.Adapter = adapter;
+            viewPager.CurrentItem = 0;
 
-            ActionBar.AddTab(activityTab);
-
-            viewPager.PageSelected += (sender, args) =>
-            {
-                var tab = ActionBar.GetTabAt(args.Position);
-                if (ActionBar.SelectedTab != tab)
-                    ActionBar.SelectTab(tab);
-            };
+            var tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.Tabs);
+            tabs.SetViewPager(viewPager);
         }
     }
 }
