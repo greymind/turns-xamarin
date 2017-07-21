@@ -19,12 +19,13 @@ namespace Greymind.Turns.Android
 
             var viewPager = FindViewById<ViewPager>(Resource.Id.viewpager);
             viewPager.Adapter = new TabsPagerAdapter(this);
-            
+
             var groupsTab = ActionBar.NewTab();
             groupsTab.SetText("Groups");
             groupsTab.TabSelected += (sender, args) =>
             {
-                viewPager.CurrentItem = 0;
+                if (viewPager.CurrentItem != 0)
+                    viewPager.CurrentItem = 0;
             };
 
             ActionBar.AddTab(groupsTab);
@@ -33,14 +34,17 @@ namespace Greymind.Turns.Android
             activityTab.SetText("Activity");
             activityTab.TabSelected += (sender, args) =>
             {
-                viewPager.CurrentItem = 1;
+                if (viewPager.CurrentItem != 1)
+                    viewPager.CurrentItem = 1;
             };
 
             ActionBar.AddTab(activityTab);
 
             viewPager.PageSelected += (sender, args) =>
             {
-                ActionBar.GetTabAt(args.Position).Select();
+                var tab = ActionBar.GetTabAt(args.Position);
+                if (ActionBar.SelectedTab != tab)
+                    ActionBar.SelectTab(tab);
             };
         }
     }
