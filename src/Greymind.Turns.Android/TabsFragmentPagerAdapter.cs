@@ -38,9 +38,9 @@ namespace Greymind.Turns.Android
             switch (position)
             {
                 case 0:
-                    return new GroupsFragment();
-                case 1:
                     return new ActivityFragment();
+                case 1:
+                    return new GroupsFragment();
                 default:
                     throw new NotSupportedException($"Position {position} is not supported!");
             }

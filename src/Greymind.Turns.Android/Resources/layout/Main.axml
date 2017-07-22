@@ -11,8 +11,8 @@
   <com.refractored.PagerSlidingTabStrip
       android:id="@+id/Tabs"
       android:layout_width="match_parent"
-      android:layout_height="?attr/actionBarSize"
-      android:background="?attr/colorPrimary"
+      android:layout_height="?android:attr/actionBarSize"
+      android:background="?android:attr/colorPrimary"
       android:textColor="@color/GreymindWhite"
       app:pstsPaddingMiddle="false" />
   <android.support.v4.view.ViewPager
