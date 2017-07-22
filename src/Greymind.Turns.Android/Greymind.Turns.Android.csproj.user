@@ -4,5 +4,6 @@
     <SelectedDevice>Nexus_6_API_23</SelectedDevice>
     <DefaultDevice>Nexus_6_API_23</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>
