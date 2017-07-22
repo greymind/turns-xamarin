@@ -48,7 +48,7 @@ namespace Greymind.Turns.Android
 
             tabs.OnTabReselectedListener = this;
 
-            ChangeColor(Resources.GetColor(Resource.Color.green));
+            ChangeColor(Resources.GetColor(Resource.Color.GreymindBlue));
 
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
@@ -63,7 +63,6 @@ namespace Greymind.Turns.Android
         {
             tabs.SetBackgroundColor(newColor);
 
-            // change ActionBar color just if an ActionBar is available
             var colorDrawable = new ColorDrawable(newColor);
             var bottomDrawable = new ColorDrawable(Color.Transparent);
             var layerDrawable = new LayerDrawable(new[] { colorDrawable, bottomDrawable });
@@ -81,13 +80,6 @@ namespace Greymind.Turns.Android
 
             oldBackground = layerDrawable;
             currentColor = newColor;
-        }
-
-        [Java.Interop.Export("onColorClicked")]
-        public void OnColorClicked(View v)
-        {
-            var color = Color.ParseColor(v.Tag.ToString());
-            ChangeColor(color);
         }
 
         protected override void OnSaveInstanceState(Bundle outState)

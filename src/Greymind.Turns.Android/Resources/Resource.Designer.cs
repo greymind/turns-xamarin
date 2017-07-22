@@ -902,7 +902,7 @@ namespace Greymind.Turns.Android
 			public const int GreymindDarkBlue = 2131296318;
 			
 			// aapt resource value: 0x7f090040
-			public const int GreymindSoftWhite = 2131296320;
+			public const int GreymindWhite = 2131296320;
 			
 			// aapt resource value: 0x7f09003c
 			public const int GreymindWhite = 2131296316;

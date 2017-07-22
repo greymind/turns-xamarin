@@ -6,8 +6,8 @@
     <item name="colorPrimary">@color/GreymindBlue</item>
     <item name="colorPrimaryDark">@color/GreymindDarkBlue</item>
     <item name="colorAccent">@color/banana</item>
-    <item name="android:textColorPrimary">@color/GreymindSoftWhite</item>
-    <item name="android:textColorSecondary">@color/GreymindSoftWhite</item>
+    <item name="android:textColorPrimary">@color/GreymindWhite</item>
+    <item name="android:textColorSecondary">@color/GreymindWhite</item>
     <item name="android:textColor">@color/GreymindBlack</item>
   </style>
 
