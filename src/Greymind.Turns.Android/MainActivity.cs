@@ -13,7 +13,7 @@ using Android.Views;
 
 namespace Greymind.Turns.Android
 {
-    [Activity(Label = "Greymind Turns", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Turns", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity,
         IOnTabReselectedListener
     {
@@ -32,8 +32,6 @@ namespace Greymind.Turns.Android
 
             var toolbar = FindViewById<global::Android.Support.V7.Widget.Toolbar>(Resource.Id.Toolbar);
             SetSupportActionBar(toolbar);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
-            SupportActionBar.SetHomeButtonEnabled(true);
 
             var titles = new[] { "Groups", "Activity" };
             var adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, titles);

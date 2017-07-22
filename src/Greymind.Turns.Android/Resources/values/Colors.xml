@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="background_window">#FFE5E5E5</color>
+  <color name="GreymindWhite">#FFE5E5E5</color>  
+  <color name="GreymindBlue">#FF3F9FE0</color>
+  <color name="GreymindDarkBlue">#FF1E8ED0</color>
+  <color name="GreymindBlack">#FF222222</color>
+  <color name="GreymindSoftWhite">#FFDDDDDD</color>
+
   <color name="green">#689F38</color>
   <color name="greenDark">#3E5F22</color>
   <color name="banana">#FFCC00</color>
