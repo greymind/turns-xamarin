@@ -38,7 +38,6 @@ namespace Greymind.Turns.Android
             viewPager = FindViewById<ViewPager>(Resource.Id.ViewPager);
             viewPager.Adapter = adapter;
 
-            viewPager.PageMargin = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 4, Resources.DisplayMetrics);
             viewPager.OffscreenPageLimit = titles.Length;
             viewPager.CurrentItem = 0;
 
