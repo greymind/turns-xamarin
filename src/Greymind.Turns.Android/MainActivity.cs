@@ -20,9 +20,6 @@ namespace Greymind.Turns.Android
         private ViewPager viewPager;
         private PagerSlidingTabStrip tabs;
 
-        private Drawable oldBackground = null;
-        private int currentColor;
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -31,6 +28,9 @@ namespace Greymind.Turns.Android
 
             var toolbar = FindViewById<global::Android.Support.V7.Widget.Toolbar>(Resource.Id.Toolbar);
             SetSupportActionBar(toolbar);
+            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             var titles = new[] { "Activities", "Groups" };
             var adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, titles);
@@ -45,22 +45,16 @@ namespace Greymind.Turns.Android
             tabs.SetViewPager(viewPager);
 
             tabs.OnPageChangeListener = this;
-
-            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
-            SupportActionBar.SetHomeButtonEnabled(true);
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
         {
             base.OnSaveInstanceState(outState);
-            outState.PutInt("currentColor", currentColor);
         }
 
         protected override void OnRestoreInstanceState(Bundle savedInstanceState)
         {
             base.OnRestoreInstanceState(savedInstanceState);
-            currentColor = savedInstanceState.GetInt("currentColor");
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
