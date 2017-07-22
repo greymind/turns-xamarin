@@ -15,9 +15,8 @@ namespace Greymind.Turns.Android
 {
     [Activity(Label = "Turns", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity,
-        IOnTabReselectedListener
+        ViewPager.IOnPageChangeListener
     {
-        //private MyPagerAdapter adapter;
         private ViewPager viewPager;
         private PagerSlidingTabStrip tabs;
 
@@ -33,7 +32,7 @@ namespace Greymind.Turns.Android
             var toolbar = FindViewById<global::Android.Support.V7.Widget.Toolbar>(Resource.Id.Toolbar);
             SetSupportActionBar(toolbar);
 
-            var titles = new[] { "Groups", "Activity" };
+            var titles = new[] { "Activities", "Groups" };
             var adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, titles);
 
             viewPager = FindViewById<ViewPager>(Resource.Id.ViewPager);
@@ -46,17 +45,12 @@ namespace Greymind.Turns.Android
             tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.Tabs);
             tabs.SetViewPager(viewPager);
 
-            tabs.OnTabReselectedListener = this;
+            tabs.OnPageChangeListener = this;
 
             ChangeColor(Resources.GetColor(Resource.Color.GreymindBlue));
 
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
-        }
-
-        public void OnTabReselected(int position)
-        {
-            Toast.MakeText(this, "Tab reselected: " + position, ToastLength.Short).Show();
         }
 
         private void ChangeColor(Color newColor)
@@ -106,6 +100,22 @@ namespace Greymind.Turns.Android
             Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
                 ToastLength.Short).Show();
             return base.OnOptionsItemSelected(item);
+        }
+
+        public void OnPageScrollStateChanged(int state)
+        {
+
+        }
+
+        public void OnPageScrolled(int position, float positionOffset, int positionOffsetPixels)
+        {
+
+        }
+
+        public void OnPageSelected(int position)
+        {
+            Toast.MakeText(this, "OnPageSelected selected: " + position,
+                ToastLength.Short).Show();
         }
     }
 }
