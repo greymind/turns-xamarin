@@ -892,44 +892,44 @@ namespace Greymind.Turns.Android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f09003c
-			public const int abc_background_cache_hint_selector_material_dark = 2131296316;
-			
-			// aapt resource value: 0x7f09003d
-			public const int abc_background_cache_hint_selector_material_light = 2131296317;
-			
-			// aapt resource value: 0x7f09003e
-			public const int abc_btn_colored_borderless_text_material = 2131296318;
-			
-			// aapt resource value: 0x7f09003f
-			public const int abc_btn_colored_text_material = 2131296319;
-			
 			// aapt resource value: 0x7f090040
-			public const int abc_color_highlight_material = 2131296320;
+			public const int abc_background_cache_hint_selector_material_dark = 2131296320;
 			
 			// aapt resource value: 0x7f090041
-			public const int abc_hint_foreground_material_dark = 2131296321;
+			public const int abc_background_cache_hint_selector_material_light = 2131296321;
 			
 			// aapt resource value: 0x7f090042
-			public const int abc_hint_foreground_material_light = 2131296322;
+			public const int abc_btn_colored_borderless_text_material = 2131296322;
+			
+			// aapt resource value: 0x7f090043
+			public const int abc_btn_colored_text_material = 2131296323;
+			
+			// aapt resource value: 0x7f090044
+			public const int abc_color_highlight_material = 2131296324;
+			
+			// aapt resource value: 0x7f090045
+			public const int abc_hint_foreground_material_dark = 2131296325;
+			
+			// aapt resource value: 0x7f090046
+			public const int abc_hint_foreground_material_light = 2131296326;
 			
 			// aapt resource value: 0x7f090001
 			public const int abc_input_method_navigation_guard = 2131296257;
 			
-			// aapt resource value: 0x7f090043
-			public const int abc_primary_text_disable_only_material_dark = 2131296323;
-			
-			// aapt resource value: 0x7f090044
-			public const int abc_primary_text_disable_only_material_light = 2131296324;
-			
-			// aapt resource value: 0x7f090045
-			public const int abc_primary_text_material_dark = 2131296325;
-			
-			// aapt resource value: 0x7f090046
-			public const int abc_primary_text_material_light = 2131296326;
-			
 			// aapt resource value: 0x7f090047
-			public const int abc_search_url_text = 2131296327;
+			public const int abc_primary_text_disable_only_material_dark = 2131296327;
+			
+			// aapt resource value: 0x7f090048
+			public const int abc_primary_text_disable_only_material_light = 2131296328;
+			
+			// aapt resource value: 0x7f090049
+			public const int abc_primary_text_material_dark = 2131296329;
+			
+			// aapt resource value: 0x7f09004a
+			public const int abc_primary_text_material_light = 2131296330;
+			
+			// aapt resource value: 0x7f09004b
+			public const int abc_search_url_text = 2131296331;
 			
 			// aapt resource value: 0x7f090002
 			public const int abc_search_url_text_normal = 2131296258;
@@ -940,32 +940,32 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f090004
 			public const int abc_search_url_text_selected = 2131296260;
 			
-			// aapt resource value: 0x7f090048
-			public const int abc_secondary_text_material_dark = 2131296328;
-			
-			// aapt resource value: 0x7f090049
-			public const int abc_secondary_text_material_light = 2131296329;
-			
-			// aapt resource value: 0x7f09004a
-			public const int abc_tint_btn_checkable = 2131296330;
-			
-			// aapt resource value: 0x7f09004b
-			public const int abc_tint_default = 2131296331;
-			
 			// aapt resource value: 0x7f09004c
-			public const int abc_tint_edittext = 2131296332;
+			public const int abc_secondary_text_material_dark = 2131296332;
 			
 			// aapt resource value: 0x7f09004d
-			public const int abc_tint_seek_thumb = 2131296333;
+			public const int abc_secondary_text_material_light = 2131296333;
 			
 			// aapt resource value: 0x7f09004e
-			public const int abc_tint_spinner = 2131296334;
+			public const int abc_tint_btn_checkable = 2131296334;
 			
 			// aapt resource value: 0x7f09004f
-			public const int abc_tint_switch_thumb = 2131296335;
+			public const int abc_tint_default = 2131296335;
 			
 			// aapt resource value: 0x7f090050
-			public const int abc_tint_switch_track = 2131296336;
+			public const int abc_tint_edittext = 2131296336;
+			
+			// aapt resource value: 0x7f090051
+			public const int abc_tint_seek_thumb = 2131296337;
+			
+			// aapt resource value: 0x7f090052
+			public const int abc_tint_spinner = 2131296338;
+			
+			// aapt resource value: 0x7f090053
+			public const int abc_tint_switch_thumb = 2131296339;
+			
+			// aapt resource value: 0x7f090054
+			public const int abc_tint_switch_track = 2131296340;
 			
 			// aapt resource value: 0x7f090005
 			public const int accent_material_dark = 2131296261;
@@ -984,6 +984,12 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 0x7f09000a
 			public const int background_material_light = 2131296266;
+			
+			// aapt resource value: 0x7f09003c
+			public const int background_window = 2131296316;
+			
+			// aapt resource value: 0x7f09003f
+			public const int banana = 2131296319;
 			
 			// aapt resource value: 0x7f09000b
 			public const int bright_foreground_disabled_material_dark = 2131296267;
@@ -1026,6 +1032,12 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 0x7f090018
 			public const int foreground_material_light = 2131296280;
+			
+			// aapt resource value: 0x7f09003d
+			public const int green = 2131296317;
+			
+			// aapt resource value: 0x7f09003e
+			public const int greenDark = 2131296318;
 			
 			// aapt resource value: 0x7f090019
 			public const int highlighted_text_material_dark = 2131296281;
@@ -1129,11 +1141,11 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f090038
 			public const int switch_thumb_disabled_material_light = 2131296312;
 			
-			// aapt resource value: 0x7f090051
-			public const int switch_thumb_material_dark = 2131296337;
+			// aapt resource value: 0x7f090055
+			public const int switch_thumb_material_dark = 2131296341;
 			
-			// aapt resource value: 0x7f090052
-			public const int switch_thumb_material_light = 2131296338;
+			// aapt resource value: 0x7f090056
+			public const int switch_thumb_material_light = 2131296342;
 			
 			// aapt resource value: 0x7f090039
 			public const int switch_thumb_normal_material_dark = 2131296313;
@@ -1375,6 +1387,12 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 0x7f060004
 			public const int abc_text_size_title_material_toolbar = 2131099652;
+			
+			// aapt resource value: 0x7f060062
+			public const int activity_horizontal_margin = 2131099746;
+			
+			// aapt resource value: 0x7f060063
+			public const int activity_vertical_margin = 2131099747;
 			
 			// aapt resource value: 0x7f06004e
 			public const int disabled_alpha_material_dark = 2131099726;
@@ -2089,6 +2107,9 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a003c
 			public const int title_template = 2131361852;
 			
+			// aapt resource value: 0x7f0a0072
+			public const int toolbar = 2131361906;
+			
 			// aapt resource value: 0x7f0a0023
 			public const int top = 2131361827;
 			
@@ -2295,6 +2316,9 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f030031
 			public const int support_simple_spinner_dropdown_item = 2130903089;
 			
+			// aapt resource value: 0x7f030032
+			public const int Toolbar = 2130903090;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -2440,6 +2464,12 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 0x7f07009e
 			public const int Animation_AppCompat_DropDownUp = 2131165342;
+			
+			// aapt resource value: 0x7f07015d
+			public const int AppBaseTheme = 2131165533;
+			
+			// aapt resource value: 0x7f07015e
+			public const int AppTheme = 2131165534;
 			
 			// aapt resource value: 0x7f07009f
 			public const int Base_AlertDialog_AppCompat = 2131165343;

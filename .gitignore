@@ -2,3 +2,5 @@
 /src/**/obj
 **/*.suo
 /src/packages
+/src/Components/PagerSlidingTabStrip-1.0.9/samples/PSTSSample/packages
+*.user
