@@ -21,8 +21,7 @@
       <item
           android:icon="@drawable/ic_menu_white_24dp"
           android:title="Sub item 2"
-          android:checkable="true"  />
+          android:checkable="true" />
     </menu>
   </item>
-
 </menu>

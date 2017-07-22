@@ -1,15 +1,11 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
+using Android.Support.Design.Widget;
 using Android.Support.V4.View;
-using System.Collections.Generic;
-using System;
-using com.refractored;
-using Android.Util;
 using Android.Support.V7.App;
-using Android.Graphics.Drawables;
-using Android.Graphics;
 using Android.Views;
+using Android.Widget;
+using com.refractored;
 
 namespace Greymind.Turns.Android
 {
@@ -45,6 +41,13 @@ namespace Greymind.Turns.Android
             tabs.SetViewPager(viewPager);
 
             tabs.OnPageChangeListener = this;
+
+            var fab = FindViewById<FloatingActionButton>(Resource.Id.Fab);
+            fab.Click += (sender, e) =>
+            {
+                Toast.MakeText(this, "Here's a snackbar!", ToastLength.Short)
+                    .Show();
+            };
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -81,12 +84,10 @@ namespace Greymind.Turns.Android
 
         public void OnPageScrollStateChanged(int state)
         {
-
         }
 
         public void OnPageScrolled(int position, float positionOffset, int positionOffsetPixels)
         {
-
         }
 
         public void OnPageSelected(int position)
@@ -96,4 +97,3 @@ namespace Greymind.Turns.Android
         }
     }
 }
-

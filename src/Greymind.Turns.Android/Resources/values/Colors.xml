@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
- 
+
   <color name="GreymindBlue">#FF6495ED</color>
   <color name="GreymindBlueLight">#FF9AC5FF</color>
   <color name="GreymindBlueDark">#FF2668BA</color>
-  
+
   <color name="GreymindGrey">#FF424242</color>
   <color name="GreymindGreyLight">#FF6D6D6D</color>
   <color name="GreymindGreyDark">#FF1B1B1B</color>
