@@ -66,21 +66,22 @@ namespace Greymind.Turns.Android
             tabs.SetBackgroundColor(newColor);
 
             // change ActionBar color just if an ActionBar is available
-            Drawable colorDrawable = new ColorDrawable(newColor);
-            Drawable bottomDrawable = new ColorDrawable(Color.Transparent);
-            LayerDrawable ld = new LayerDrawable(new Drawable[] { colorDrawable, bottomDrawable });
+            var colorDrawable = new ColorDrawable(newColor);
+            var bottomDrawable = new ColorDrawable(Color.Transparent);
+            var layerDrawable = new LayerDrawable(new[] { colorDrawable, bottomDrawable });
+
             if (oldBackground == null)
             {
-                SupportActionBar.SetBackgroundDrawable(ld);
+                SupportActionBar.SetBackgroundDrawable(layerDrawable);
             }
             else
             {
-                TransitionDrawable td = new TransitionDrawable(new Drawable[] { oldBackground, ld });
+                var td = new TransitionDrawable(new[] { oldBackground, layerDrawable });
                 SupportActionBar.SetBackgroundDrawable(td);
                 td.StartTransition(200);
             }
 
-            oldBackground = ld;
+            oldBackground = layerDrawable;
             currentColor = newColor;
         }
 
@@ -89,6 +90,19 @@ namespace Greymind.Turns.Android
         {
             var color = Color.ParseColor(v.Tag.ToString());
             ChangeColor(color);
+        }
+
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            base.OnSaveInstanceState(outState);
+            outState.PutInt("currentColor", currentColor);
+        }
+
+        protected override void OnRestoreInstanceState(Bundle savedInstanceState)
+        {
+            base.OnRestoreInstanceState(savedInstanceState);
+            currentColor = savedInstanceState.GetInt("currentColor");
+            ChangeColor(new Color(currentColor));
         }
     }
 }
