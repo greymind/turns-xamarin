@@ -1978,6 +1978,15 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a0061
 			public const int media_actions = 2131361889;
 			
+			// aapt resource value: 0x7f0a0074
+			public const int menu_edit = 2131361908;
+			
+			// aapt resource value: 0x7f0a0076
+			public const int menu_preferences = 2131361910;
+			
+			// aapt resource value: 0x7f0a0075
+			public const int menu_save = 2131361909;
+			
 			// aapt resource value: 0x7f0a001c
 			public const int middle = 2131361820;
 			
@@ -2346,6 +2355,22 @@ namespace Greymind.Turns.Android
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f0c0000
+			public const int TopMenus = 2131492864;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
