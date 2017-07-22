@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true">
-    <include
-        layout="@layout/Toolbar" />
-    <com.refractored.PagerSlidingTabStrip
-        android:id="@+id/Tabs"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:textColor="@color/GreymindWhite"
-        app:pstsPaddingMiddle="false" />
-    <android.support.v4.view.ViewPager
-        android:id="@+id/ViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:context=".MainActivity" />
+  <include
+      layout="@layout/Toolbar" />
+  <com.refractored.PagerSlidingTabStrip
+      android:id="@+id/Tabs"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:textColor="@color/GreymindWhite"
+      app:pstsPaddingMiddle="false" />
+  <android.support.v4.view.ViewPager
+      android:id="@+id/ViewPager"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      tools:context=".MainActivity" />
+  <!--<android.support.design.widget.NavigationView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:background="@color/GreymindWhite"
+      android:id="@+id/nav_view"
+      app:headerLayout="@layout/drawer_header"
+      app:menu="@menu/NavMenu" />-->
 </LinearLayout>

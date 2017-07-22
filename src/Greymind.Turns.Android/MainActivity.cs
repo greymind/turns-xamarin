@@ -47,33 +47,8 @@ namespace Greymind.Turns.Android
 
             tabs.OnPageChangeListener = this;
 
-            ChangeColor(Resources.GetColor(Resource.Color.GreymindBlue));
-
             SupportActionBar.SetDisplayHomeAsUpEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(false);
-        }
-
-        private void ChangeColor(Color newColor)
-        {
-            tabs.SetBackgroundColor(newColor);
-
-            var colorDrawable = new ColorDrawable(newColor);
-            var bottomDrawable = new ColorDrawable(Color.Transparent);
-            var layerDrawable = new LayerDrawable(new[] { colorDrawable, bottomDrawable });
-
-            if (oldBackground == null)
-            {
-                SupportActionBar.SetBackgroundDrawable(layerDrawable);
-            }
-            else
-            {
-                var td = new TransitionDrawable(new[] { oldBackground, layerDrawable });
-                SupportActionBar.SetBackgroundDrawable(td);
-                td.StartTransition(200);
-            }
-
-            oldBackground = layerDrawable;
-            currentColor = newColor;
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -86,12 +61,11 @@ namespace Greymind.Turns.Android
         {
             base.OnRestoreInstanceState(savedInstanceState);
             currentColor = savedInstanceState.GetInt("currentColor");
-            ChangeColor(new Color(currentColor));
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            MenuInflater.Inflate(Resource.Menu.TopMenus, menu);
+            MenuInflater.Inflate(Resource.Menu.TopMenu, menu);
             return base.OnCreateOptionsMenu(menu);
         }
 

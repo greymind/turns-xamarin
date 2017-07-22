@@ -26,6 +26,29 @@ namespace Greymind.Turns.Android
 		
 		public static void UpdateIdValues()
 		{
+			global::com.refractored.fab.Resource.Attribute.fab_colorDisabled = global::Greymind.Turns.Android.Resource.Attribute.fab_colorDisabled;
+			global::com.refractored.fab.Resource.Attribute.fab_colorNormal = global::Greymind.Turns.Android.Resource.Attribute.fab_colorNormal;
+			global::com.refractored.fab.Resource.Attribute.fab_colorPressed = global::Greymind.Turns.Android.Resource.Attribute.fab_colorPressed;
+			global::com.refractored.fab.Resource.Attribute.fab_colorRipple = global::Greymind.Turns.Android.Resource.Attribute.fab_colorRipple;
+			global::com.refractored.fab.Resource.Attribute.fab_shadow = global::Greymind.Turns.Android.Resource.Attribute.fab_shadow;
+			global::com.refractored.fab.Resource.Attribute.fab_size = global::Greymind.Turns.Android.Resource.Attribute.fab_size;
+			global::com.refractored.fab.Resource.Color.fab_material_blue_500 = global::Greymind.Turns.Android.Resource.Color.fab_material_blue_500;
+			global::com.refractored.fab.Resource.Dimension.fab_elevation_lollipop = global::Greymind.Turns.Android.Resource.Dimension.fab_elevation_lollipop;
+			global::com.refractored.fab.Resource.Dimension.fab_scroll_threshold = global::Greymind.Turns.Android.Resource.Dimension.fab_scroll_threshold;
+			global::com.refractored.fab.Resource.Dimension.fab_shadow_size = global::Greymind.Turns.Android.Resource.Dimension.fab_shadow_size;
+			global::com.refractored.fab.Resource.Dimension.fab_size_mini = global::Greymind.Turns.Android.Resource.Dimension.fab_size_mini;
+			global::com.refractored.fab.Resource.Dimension.fab_size_normal = global::Greymind.Turns.Android.Resource.Dimension.fab_size_normal;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow = global::Greymind.Turns.Android.Resource.Drawable.fab_shadow;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow_mini = global::Greymind.Turns.Android.Resource.Drawable.fab_shadow_mini;
+			global::com.refractored.fab.Resource.Id.mini = global::Greymind.Turns.Android.Resource.Id.mini;
+			global::com.refractored.fab.Resource.Id.normal = global::Greymind.Turns.Android.Resource.Id.normal;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorDisabled = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton_fab_colorDisabled;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorNormal = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton_fab_colorNormal;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorPressed = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton_fab_colorPressed;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorRipple = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton_fab_colorRipple;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_shadow = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton_fab_shadow;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_size = global::Greymind.Turns.Android.Resource.Styleable.FloatingActionButton_fab_size;
 			global::com.refractored.Resource.Attribute.pstsDividerColor = global::Greymind.Turns.Android.Resource.Attribute.pstsDividerColor;
 			global::com.refractored.Resource.Attribute.pstsDividerPadding = global::Greymind.Turns.Android.Resource.Attribute.pstsDividerPadding;
 			global::com.refractored.Resource.Attribute.pstsDividerWidth = global::Greymind.Turns.Android.Resource.Attribute.pstsDividerWidth;
@@ -424,6 +447,24 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 0x7f010020
 			public const int expandActivityOverflowButtonDrawable = 2130772000;
+			
+			// aapt resource value: 0x7f0100f7
+			public const int fab_colorDisabled = 2130772215;
+			
+			// aapt resource value: 0x7f0100f6
+			public const int fab_colorNormal = 2130772214;
+			
+			// aapt resource value: 0x7f0100f5
+			public const int fab_colorPressed = 2130772213;
+			
+			// aapt resource value: 0x7f0100f8
+			public const int fab_colorRipple = 2130772216;
+			
+			// aapt resource value: 0x7f0100f9
+			public const int fab_shadow = 2130772217;
+			
+			// aapt resource value: 0x7f0100fa
+			public const int fab_size = 2130772218;
 			
 			// aapt resource value: 0x7f0100a4
 			public const int gapBetweenBars = 2130772132;
@@ -892,56 +933,80 @@ namespace Greymind.Turns.Android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f09003f
-			public const int GreymindBlack = 2131296319;
+			// aapt resource value: 0x7f090046
+			public const int GreymindBlack = 2131296326;
+			
+			// aapt resource value: 0x7f090048
+			public const int GreymindBlackDark = 2131296328;
+			
+			// aapt resource value: 0x7f090047
+			public const int GreymindBlackLight = 2131296327;
 			
 			// aapt resource value: 0x7f09003d
 			public const int GreymindBlue = 2131296317;
 			
-			// aapt resource value: 0x7f09003e
-			public const int GreymindDarkBlue = 2131296318;
+			// aapt resource value: 0x7f09003f
+			public const int GreymindBlueDark = 2131296319;
 			
-			// aapt resource value: 0x7f09003c
-			public const int GreymindWhite = 2131296316;
+			// aapt resource value: 0x7f09003e
+			public const int GreymindBlueLight = 2131296318;
+			
+			// aapt resource value: 0x7f090040
+			public const int GreymindGrey = 2131296320;
+			
+			// aapt resource value: 0x7f090042
+			public const int GreymindGreyDark = 2131296322;
+			
+			// aapt resource value: 0x7f090041
+			public const int GreymindGreyLight = 2131296321;
 			
 			// aapt resource value: 0x7f090043
-			public const int abc_background_cache_hint_selector_material_dark = 2131296323;
-			
-			// aapt resource value: 0x7f090044
-			public const int abc_background_cache_hint_selector_material_light = 2131296324;
+			public const int GreymindWhite = 2131296323;
 			
 			// aapt resource value: 0x7f090045
-			public const int abc_btn_colored_borderless_text_material = 2131296325;
+			public const int GreymindWhiteDark = 2131296325;
 			
-			// aapt resource value: 0x7f090046
-			public const int abc_btn_colored_text_material = 2131296326;
-			
-			// aapt resource value: 0x7f090047
-			public const int abc_color_highlight_material = 2131296327;
-			
-			// aapt resource value: 0x7f090048
-			public const int abc_hint_foreground_material_dark = 2131296328;
+			// aapt resource value: 0x7f090044
+			public const int GreymindWhiteLight = 2131296324;
 			
 			// aapt resource value: 0x7f090049
-			public const int abc_hint_foreground_material_light = 2131296329;
+			public const int abc_background_cache_hint_selector_material_dark = 2131296329;
+			
+			// aapt resource value: 0x7f09004a
+			public const int abc_background_cache_hint_selector_material_light = 2131296330;
+			
+			// aapt resource value: 0x7f09004b
+			public const int abc_btn_colored_borderless_text_material = 2131296331;
+			
+			// aapt resource value: 0x7f09004c
+			public const int abc_btn_colored_text_material = 2131296332;
+			
+			// aapt resource value: 0x7f09004d
+			public const int abc_color_highlight_material = 2131296333;
+			
+			// aapt resource value: 0x7f09004e
+			public const int abc_hint_foreground_material_dark = 2131296334;
+			
+			// aapt resource value: 0x7f09004f
+			public const int abc_hint_foreground_material_light = 2131296335;
 			
 			// aapt resource value: 0x7f090001
 			public const int abc_input_method_navigation_guard = 2131296257;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_primary_text_disable_only_material_dark = 2131296330;
+			// aapt resource value: 0x7f090050
+			public const int abc_primary_text_disable_only_material_dark = 2131296336;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_primary_text_disable_only_material_light = 2131296331;
+			// aapt resource value: 0x7f090051
+			public const int abc_primary_text_disable_only_material_light = 2131296337;
 			
-			// aapt resource value: 0x7f09004c
-			public const int abc_primary_text_material_dark = 2131296332;
+			// aapt resource value: 0x7f090052
+			public const int abc_primary_text_material_dark = 2131296338;
 			
-			// aapt resource value: 0x7f09004d
-			public const int abc_primary_text_material_light = 2131296333;
+			// aapt resource value: 0x7f090053
+			public const int abc_primary_text_material_light = 2131296339;
 			
-			// aapt resource value: 0x7f09004e
-			public const int abc_search_url_text = 2131296334;
+			// aapt resource value: 0x7f090054
+			public const int abc_search_url_text = 2131296340;
 			
 			// aapt resource value: 0x7f090002
 			public const int abc_search_url_text_normal = 2131296258;
@@ -952,32 +1017,32 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f090004
 			public const int abc_search_url_text_selected = 2131296260;
 			
-			// aapt resource value: 0x7f09004f
-			public const int abc_secondary_text_material_dark = 2131296335;
-			
-			// aapt resource value: 0x7f090050
-			public const int abc_secondary_text_material_light = 2131296336;
-			
-			// aapt resource value: 0x7f090051
-			public const int abc_tint_btn_checkable = 2131296337;
-			
-			// aapt resource value: 0x7f090052
-			public const int abc_tint_default = 2131296338;
-			
-			// aapt resource value: 0x7f090053
-			public const int abc_tint_edittext = 2131296339;
-			
-			// aapt resource value: 0x7f090054
-			public const int abc_tint_seek_thumb = 2131296340;
-			
 			// aapt resource value: 0x7f090055
-			public const int abc_tint_spinner = 2131296341;
+			public const int abc_secondary_text_material_dark = 2131296341;
 			
 			// aapt resource value: 0x7f090056
-			public const int abc_tint_switch_thumb = 2131296342;
+			public const int abc_secondary_text_material_light = 2131296342;
 			
 			// aapt resource value: 0x7f090057
-			public const int abc_tint_switch_track = 2131296343;
+			public const int abc_tint_btn_checkable = 2131296343;
+			
+			// aapt resource value: 0x7f090058
+			public const int abc_tint_default = 2131296344;
+			
+			// aapt resource value: 0x7f090059
+			public const int abc_tint_edittext = 2131296345;
+			
+			// aapt resource value: 0x7f09005a
+			public const int abc_tint_seek_thumb = 2131296346;
+			
+			// aapt resource value: 0x7f09005b
+			public const int abc_tint_spinner = 2131296347;
+			
+			// aapt resource value: 0x7f09005c
+			public const int abc_tint_switch_thumb = 2131296348;
+			
+			// aapt resource value: 0x7f09005d
+			public const int abc_tint_switch_track = 2131296349;
 			
 			// aapt resource value: 0x7f090005
 			public const int accent_material_dark = 2131296261;
@@ -996,9 +1061,6 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 0x7f09000a
 			public const int background_material_light = 2131296266;
-			
-			// aapt resource value: 0x7f090042
-			public const int banana = 2131296322;
 			
 			// aapt resource value: 0x7f09000b
 			public const int bright_foreground_disabled_material_dark = 2131296267;
@@ -1036,17 +1098,14 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f090016
 			public const int dim_foreground_material_light = 2131296278;
 			
+			// aapt resource value: 0x7f09003c
+			public const int fab_material_blue_500 = 2131296316;
+			
 			// aapt resource value: 0x7f090017
 			public const int foreground_material_dark = 2131296279;
 			
 			// aapt resource value: 0x7f090018
 			public const int foreground_material_light = 2131296280;
-			
-			// aapt resource value: 0x7f090040
-			public const int green = 2131296320;
-			
-			// aapt resource value: 0x7f090041
-			public const int greenDark = 2131296321;
 			
 			// aapt resource value: 0x7f090019
 			public const int highlighted_text_material_dark = 2131296281;
@@ -1150,11 +1209,11 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f090038
 			public const int switch_thumb_disabled_material_light = 2131296312;
 			
-			// aapt resource value: 0x7f090058
-			public const int switch_thumb_material_dark = 2131296344;
+			// aapt resource value: 0x7f09005e
+			public const int switch_thumb_material_dark = 2131296350;
 			
-			// aapt resource value: 0x7f090059
-			public const int switch_thumb_material_light = 2131296345;
+			// aapt resource value: 0x7f09005f
+			public const int switch_thumb_material_light = 2131296351;
 			
 			// aapt resource value: 0x7f090039
 			public const int switch_thumb_normal_material_dark = 2131296313;
@@ -1397,17 +1456,32 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f060004
 			public const int abc_text_size_title_material_toolbar = 2131099652;
 			
-			// aapt resource value: 0x7f060062
-			public const int activity_horizontal_margin = 2131099746;
+			// aapt resource value: 0x7f060067
+			public const int activity_horizontal_margin = 2131099751;
 			
-			// aapt resource value: 0x7f060063
-			public const int activity_vertical_margin = 2131099747;
+			// aapt resource value: 0x7f060068
+			public const int activity_vertical_margin = 2131099752;
 			
 			// aapt resource value: 0x7f06004e
 			public const int disabled_alpha_material_dark = 2131099726;
 			
 			// aapt resource value: 0x7f06004f
 			public const int disabled_alpha_material_light = 2131099727;
+			
+			// aapt resource value: 0x7f060066
+			public const int fab_elevation_lollipop = 2131099750;
+			
+			// aapt resource value: 0x7f060065
+			public const int fab_scroll_threshold = 2131099749;
+			
+			// aapt resource value: 0x7f060064
+			public const int fab_shadow_size = 2131099748;
+			
+			// aapt resource value: 0x7f060063
+			public const int fab_size_mini = 2131099747;
+			
+			// aapt resource value: 0x7f060062
+			public const int fab_size_normal = 2131099746;
 			
 			// aapt resource value: 0x7f060050
 			public const int highlight_alpha_material_colored = 2131099728;
@@ -1738,64 +1812,55 @@ namespace Greymind.Turns.Android
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_action_content_create = 2130837587;
+			public const int fab_shadow = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_action_content_save = 2130837588;
+			public const int fab_shadow_mini = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_menu_copy_holo_dark = 2130837589;
+			public const int ic_menu_white_24dp = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_menu_cut_holo_dark = 2130837590;
+			public const int Icon = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_menu_paste_holo_dark = 2130837591;
+			public const int notification_action_background = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_menu_search_holo_dark = 2130837592;
+			public const int notification_bg = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int Icon = 2130837593;
+			public const int notification_bg_low = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int notification_action_background = 2130837594;
+			public const int notification_bg_low_normal = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int notification_bg = 2130837595;
+			public const int notification_bg_low_pressed = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notification_bg_low = 2130837596;
+			public const int notification_bg_normal = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int notification_bg_low_normal = 2130837597;
+			public const int notification_bg_normal_pressed = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int notification_bg_low_pressed = 2130837598;
-			
-			// aapt resource value: 0x7f02005f
-			public const int notification_bg_normal = 2130837599;
-			
-			// aapt resource value: 0x7f020060
-			public const int notification_bg_normal_pressed = 2130837600;
-			
-			// aapt resource value: 0x7f020061
-			public const int notification_icon_background = 2130837601;
-			
-			// aapt resource value: 0x7f020065
-			public const int notification_template_icon_bg = 2130837605;
-			
-			// aapt resource value: 0x7f020066
-			public const int notification_template_icon_low_bg = 2130837606;
+			public const int notification_icon_background = 2130837598;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_tile_bg = 2130837602;
+			public const int notification_template_icon_bg = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notify_panel_notification_icon_bg = 2130837603;
+			public const int notification_template_icon_low_bg = 2130837603;
 			
-			// aapt resource value: 0x7f020064
-			public const int psts_background_tab = 2130837604;
+			// aapt resource value: 0x7f02005f
+			public const int notification_tile_bg = 2130837599;
+			
+			// aapt resource value: 0x7f020060
+			public const int notify_panel_notification_icon_bg = 2130837600;
+			
+			// aapt resource value: 0x7f020061
+			public const int psts_background_tab = 2130837601;
 			
 			static Drawable()
 			{
@@ -1810,50 +1875,50 @@ namespace Greymind.Turns.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a0058
-			public const int Tabs = 2131361880;
-			
-			// aapt resource value: 0x7f0a0072
-			public const int Toolbar = 2131361906;
-			
 			// aapt resource value: 0x7f0a0059
-			public const int ViewPager = 2131361881;
+			public const int Tabs = 2131361881;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int action0 = 2131361885;
+			// aapt resource value: 0x7f0a0073
+			public const int Toolbar = 2131361907;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int action_bar = 2131361865;
+			// aapt resource value: 0x7f0a005a
+			public const int ViewPager = 2131361882;
+			
+			// aapt resource value: 0x7f0a005e
+			public const int action0 = 2131361886;
+			
+			// aapt resource value: 0x7f0a004a
+			public const int action_bar = 2131361866;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int action_bar_activity_content = 2131361792;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int action_bar_container = 2131361864;
+			// aapt resource value: 0x7f0a0049
+			public const int action_bar_container = 2131361865;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int action_bar_root = 2131361860;
+			// aapt resource value: 0x7f0a0045
+			public const int action_bar_root = 2131361861;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int action_bar_spinner = 2131361793;
 			
+			// aapt resource value: 0x7f0a0028
+			public const int action_bar_subtitle = 2131361832;
+			
 			// aapt resource value: 0x7f0a0027
-			public const int action_bar_subtitle = 2131361831;
-			
-			// aapt resource value: 0x7f0a0026
-			public const int action_bar_title = 2131361830;
-			
-			// aapt resource value: 0x7f0a005a
-			public const int action_container = 2131361882;
-			
-			// aapt resource value: 0x7f0a004a
-			public const int action_context_bar = 2131361866;
-			
-			// aapt resource value: 0x7f0a0061
-			public const int action_divider = 2131361889;
+			public const int action_bar_title = 2131361831;
 			
 			// aapt resource value: 0x7f0a005b
-			public const int action_image = 2131361883;
+			public const int action_container = 2131361883;
+			
+			// aapt resource value: 0x7f0a004b
+			public const int action_context_bar = 2131361867;
+			
+			// aapt resource value: 0x7f0a0062
+			public const int action_divider = 2131361890;
+			
+			// aapt resource value: 0x7f0a005c
+			public const int action_image = 2131361884;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int action_menu_divider = 2131361794;
@@ -1861,29 +1926,29 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_presenter = 2131361795;
 			
+			// aapt resource value: 0x7f0a0047
+			public const int action_mode_bar = 2131361863;
+			
 			// aapt resource value: 0x7f0a0046
-			public const int action_mode_bar = 2131361862;
-			
-			// aapt resource value: 0x7f0a0045
-			public const int action_mode_bar_stub = 2131361861;
-			
-			// aapt resource value: 0x7f0a0028
-			public const int action_mode_close_button = 2131361832;
-			
-			// aapt resource value: 0x7f0a005c
-			public const int action_text = 2131361884;
-			
-			// aapt resource value: 0x7f0a006a
-			public const int actions = 2131361898;
+			public const int action_mode_bar_stub = 2131361862;
 			
 			// aapt resource value: 0x7f0a0029
-			public const int activity_chooser_view_content = 2131361833;
+			public const int action_mode_close_button = 2131361833;
+			
+			// aapt resource value: 0x7f0a005d
+			public const int action_text = 2131361885;
+			
+			// aapt resource value: 0x7f0a006b
+			public const int actions = 2131361899;
+			
+			// aapt resource value: 0x7f0a002a
+			public const int activity_chooser_view_content = 2131361834;
 			
 			// aapt resource value: 0x7f0a0013
 			public const int add = 2131361811;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int alertTitle = 2131361853;
+			// aapt resource value: 0x7f0a003e
+			public const int alertTitle = 2131361854;
 			
 			// aapt resource value: 0x7f0a001d
 			public const int always = 2131361821;
@@ -1897,53 +1962,53 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a0022
 			public const int bottom = 2131361826;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int buttonPanel = 2131361840;
+			// aapt resource value: 0x7f0a0031
+			public const int buttonPanel = 2131361841;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int cancel_action = 2131361886;
+			// aapt resource value: 0x7f0a005f
+			public const int cancel_action = 2131361887;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int checkbox = 2131361856;
+			// aapt resource value: 0x7f0a0041
+			public const int checkbox = 2131361857;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int chronometer = 2131361894;
+			// aapt resource value: 0x7f0a0067
+			public const int chronometer = 2131361895;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int collapseActionView = 2131361822;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int contentPanel = 2131361843;
+			// aapt resource value: 0x7f0a0034
+			public const int contentPanel = 2131361844;
+			
+			// aapt resource value: 0x7f0a003b
+			public const int custom = 2131361851;
 			
 			// aapt resource value: 0x7f0a003a
-			public const int custom = 2131361850;
+			public const int customPanel = 2131361850;
 			
-			// aapt resource value: 0x7f0a0039
-			public const int customPanel = 2131361849;
+			// aapt resource value: 0x7f0a0048
+			public const int decor_content_parent = 2131361864;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int decor_content_parent = 2131361863;
-			
-			// aapt resource value: 0x7f0a002c
-			public const int default_activity_button = 2131361836;
+			// aapt resource value: 0x7f0a002d
+			public const int default_activity_button = 2131361837;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int disableHome = 2131361804;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int edit_query = 2131361867;
+			// aapt resource value: 0x7f0a004c
+			public const int edit_query = 2131361868;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int end = 2131361819;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int end_padder = 2131361904;
+			// aapt resource value: 0x7f0a0071
+			public const int end_padder = 2131361905;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int expand_activities_button = 2131361834;
+			// aapt resource value: 0x7f0a002b
+			public const int expand_activities_button = 2131361835;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int expanded_menu = 2131361855;
+			// aapt resource value: 0x7f0a0040
+			public const int expanded_menu = 2131361856;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int home = 2131361796;
@@ -1951,53 +2016,62 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a000d
 			public const int homeAsUp = 2131361805;
 			
-			// aapt resource value: 0x7f0a002e
-			public const int icon = 2131361838;
+			// aapt resource value: 0x7f0a002f
+			public const int icon = 2131361839;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int icon_group = 2131361899;
+			// aapt resource value: 0x7f0a006c
+			public const int icon_group = 2131361900;
 			
 			// aapt resource value: 0x7f0a001f
 			public const int ifRoom = 2131361823;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int image = 2131361835;
+			// aapt resource value: 0x7f0a002c
+			public const int image = 2131361836;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int info = 2131361895;
+			// aapt resource value: 0x7f0a0068
+			public const int info = 2131361896;
 			
 			// aapt resource value: 0x7f0a0025
 			public const int italic = 2131361829;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int line1 = 2131361900;
+			// aapt resource value: 0x7f0a006d
+			public const int line1 = 2131361901;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int line3 = 2131361902;
+			// aapt resource value: 0x7f0a006f
+			public const int line3 = 2131361903;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int listMode = 2131361801;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int list_item = 2131361837;
+			// aapt resource value: 0x7f0a002e
+			public const int list_item = 2131361838;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int media_actions = 2131361888;
+			// aapt resource value: 0x7f0a0061
+			public const int media_actions = 2131361889;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int menu_edit = 2131361907;
+			// aapt resource value: 0x7f0a0076
+			public const int menu_edit = 2131361910;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int menu_preferences = 2131361909;
+			// aapt resource value: 0x7f0a0078
+			public const int menu_preferences = 2131361912;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int menu_save = 2131361908;
+			// aapt resource value: 0x7f0a0077
+			public const int menu_save = 2131361911;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int middle = 2131361820;
 			
+			// aapt resource value: 0x7f0a0026
+			public const int mini = 2131361830;
+			
 			// aapt resource value: 0x7f0a0014
 			public const int multiply = 2131361812;
+			
+			// aapt resource value: 0x7f0a0074
+			public const int nav_home_1 = 2131361908;
+			
+			// aapt resource value: 0x7f0a0075
+			public const int nav_home_2 = 2131361909;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int never = 2131361824;
@@ -2008,17 +2082,17 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a000a
 			public const int normal = 2131361802;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int notification_background = 2131361897;
+			// aapt resource value: 0x7f0a006a
+			public const int notification_background = 2131361898;
+			
+			// aapt resource value: 0x7f0a0064
+			public const int notification_main_column = 2131361892;
 			
 			// aapt resource value: 0x7f0a0063
-			public const int notification_main_column = 2131361891;
+			public const int notification_main_column_container = 2131361891;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int notification_main_column_container = 2131361890;
-			
-			// aapt resource value: 0x7f0a0032
-			public const int parentPanel = 2131361842;
+			// aapt resource value: 0x7f0a0033
+			public const int parentPanel = 2131361843;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int progress_circular = 2131361797;
@@ -2026,65 +2100,65 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a0006
 			public const int progress_horizontal = 2131361798;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int psts_tab_title = 2131361905;
+			// aapt resource value: 0x7f0a0072
+			public const int psts_tab_title = 2131361906;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int radio = 2131361858;
+			// aapt resource value: 0x7f0a0043
+			public const int radio = 2131361859;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int right_icon = 2131361896;
+			// aapt resource value: 0x7f0a0069
+			public const int right_icon = 2131361897;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int right_side = 2131361892;
+			// aapt resource value: 0x7f0a0065
+			public const int right_side = 2131361893;
 			
 			// aapt resource value: 0x7f0a0015
 			public const int screen = 2131361813;
 			
-			// aapt resource value: 0x7f0a0038
-			public const int scrollIndicatorDown = 2131361848;
-			
-			// aapt resource value: 0x7f0a0034
-			public const int scrollIndicatorUp = 2131361844;
+			// aapt resource value: 0x7f0a0039
+			public const int scrollIndicatorDown = 2131361849;
 			
 			// aapt resource value: 0x7f0a0035
-			public const int scrollView = 2131361845;
+			public const int scrollIndicatorUp = 2131361845;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int search_badge = 2131361869;
-			
-			// aapt resource value: 0x7f0a004c
-			public const int search_bar = 2131361868;
+			// aapt resource value: 0x7f0a0036
+			public const int scrollView = 2131361846;
 			
 			// aapt resource value: 0x7f0a004e
-			public const int search_button = 2131361870;
+			public const int search_badge = 2131361870;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int search_close_btn = 2131361875;
+			// aapt resource value: 0x7f0a004d
+			public const int search_bar = 2131361869;
 			
 			// aapt resource value: 0x7f0a004f
-			public const int search_edit_frame = 2131361871;
+			public const int search_button = 2131361871;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int search_go_btn = 2131361877;
+			// aapt resource value: 0x7f0a0054
+			public const int search_close_btn = 2131361876;
 			
 			// aapt resource value: 0x7f0a0050
-			public const int search_mag_icon = 2131361872;
-			
-			// aapt resource value: 0x7f0a0051
-			public const int search_plate = 2131361873;
-			
-			// aapt resource value: 0x7f0a0052
-			public const int search_src_text = 2131361874;
+			public const int search_edit_frame = 2131361872;
 			
 			// aapt resource value: 0x7f0a0056
-			public const int search_voice_btn = 2131361878;
+			public const int search_go_btn = 2131361878;
+			
+			// aapt resource value: 0x7f0a0051
+			public const int search_mag_icon = 2131361873;
+			
+			// aapt resource value: 0x7f0a0052
+			public const int search_plate = 2131361874;
+			
+			// aapt resource value: 0x7f0a0053
+			public const int search_src_text = 2131361875;
 			
 			// aapt resource value: 0x7f0a0057
-			public const int select_dialog_listview = 2131361879;
+			public const int search_voice_btn = 2131361879;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int shortcut = 2131361857;
+			// aapt resource value: 0x7f0a0058
+			public const int select_dialog_listview = 2131361880;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int shortcut = 2131361858;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int showCustom = 2131361807;
@@ -2095,8 +2169,8 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a0011
 			public const int showTitle = 2131361809;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int spacer = 2131361841;
+			// aapt resource value: 0x7f0a0032
+			public const int spacer = 2131361842;
 			
 			// aapt resource value: 0x7f0a0007
 			public const int split_action_bar = 2131361799;
@@ -2110,47 +2184,47 @@ namespace Greymind.Turns.Android
 			// aapt resource value: 0x7f0a0018
 			public const int src_over = 2131361816;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int status_bar_latest_event_content = 2131361887;
+			// aapt resource value: 0x7f0a0060
+			public const int status_bar_latest_event_content = 2131361888;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int submenuarrow = 2131361859;
+			// aapt resource value: 0x7f0a0044
+			public const int submenuarrow = 2131361860;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int submit_area = 2131361876;
+			// aapt resource value: 0x7f0a0055
+			public const int submit_area = 2131361877;
 			
 			// aapt resource value: 0x7f0a000b
 			public const int tabMode = 2131361803;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int text = 2131361903;
+			// aapt resource value: 0x7f0a0070
+			public const int text = 2131361904;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int text2 = 2131361901;
+			// aapt resource value: 0x7f0a006e
+			public const int text2 = 2131361902;
+			
+			// aapt resource value: 0x7f0a0038
+			public const int textSpacerNoButtons = 2131361848;
 			
 			// aapt resource value: 0x7f0a0037
-			public const int textSpacerNoButtons = 2131361847;
+			public const int textSpacerNoTitle = 2131361847;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int textSpacerNoTitle = 2131361846;
+			// aapt resource value: 0x7f0a0066
+			public const int time = 2131361894;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int time = 2131361893;
+			// aapt resource value: 0x7f0a0030
+			public const int title = 2131361840;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int title = 2131361839;
+			// aapt resource value: 0x7f0a003f
+			public const int titleDividerNoCustom = 2131361855;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int titleDividerNoCustom = 2131361854;
-			
-			// aapt resource value: 0x7f0a003c
-			public const int title_template = 2131361852;
+			// aapt resource value: 0x7f0a003d
+			public const int title_template = 2131361853;
 			
 			// aapt resource value: 0x7f0a0023
 			public const int top = 2131361827;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int topPanel = 2131361851;
+			// aapt resource value: 0x7f0a003c
+			public const int topPanel = 2131361852;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int up = 2131361800;
@@ -2369,7 +2443,10 @@ namespace Greymind.Turns.Android
 		{
 			
 			// aapt resource value: 0x7f0c0000
-			public const int TopMenus = 2131492864;
+			public const int NavMenu = 2131492864;
+			
+			// aapt resource value: 0x7f0c0001
+			public const int TopMenu = 2131492865;
 			
 			static Menu()
 			{
@@ -4366,6 +4443,32 @@ namespace Greymind.Turns.Android
 			
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
+			
+			public static int[] FloatingActionButton = new int[] {
+					2130772213,
+					2130772214,
+					2130772215,
+					2130772216,
+					2130772217,
+					2130772218};
+			
+			// aapt resource value: 2
+			public const int FloatingActionButton_fab_colorDisabled = 2;
+			
+			// aapt resource value: 1
+			public const int FloatingActionButton_fab_colorNormal = 1;
+			
+			// aapt resource value: 0
+			public const int FloatingActionButton_fab_colorPressed = 0;
+			
+			// aapt resource value: 3
+			public const int FloatingActionButton_fab_colorRipple = 3;
+			
+			// aapt resource value: 4
+			public const int FloatingActionButton_fab_shadow = 4;
+			
+			// aapt resource value: 5
+			public const int FloatingActionButton_fab_size = 5;
 			
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
