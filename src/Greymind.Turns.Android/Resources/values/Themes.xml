@@ -5,7 +5,7 @@
     <item name="android:windowBackground">@color/GreymindWhite</item>
     <item name="colorPrimary">@color/GreymindGrey</item>
     <item name="colorPrimaryDark">@color/GreymindGreyDark</item>
-    <item name="colorAccent">@color/GreymindBlue</item>
+    <item name="colorAccent">@color/GreymindGreyLight</item>
     <item name="android:textColorPrimary">@color/GreymindWhite</item>
     <item name="android:textColorSecondary">@color/GreymindWhiteLight</item>
     <item name="android:textColor">@color/GreymindGrey</item>

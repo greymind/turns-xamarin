@@ -47,8 +47,9 @@ namespace Greymind.Turns.Android
 
             tabs.OnPageChangeListener = this;
 
-            SupportActionBar.SetDisplayHomeAsUpEnabled(false);
-            SupportActionBar.SetHomeButtonEnabled(false);
+            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
         }
 
         protected override void OnSaveInstanceState(Bundle outState)
@@ -71,6 +72,15 @@ namespace Greymind.Turns.Android
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
+            switch (item.ItemId)
+            {
+                case global::Android.Resource.Id.Home:
+                    //drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.Start);
+                    Toast.MakeText(this, "Home action selected",
+                        ToastLength.Short).Show();
+                    return true;
+            }
+
             Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
                 ToastLength.Short).Show();
             return base.OnOptionsItemSelected(item);

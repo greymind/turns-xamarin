@@ -1234,6 +1234,9 @@ namespace Greymind.Turns.Android
 		public partial class Dimension
 		{
 			
+			// aapt resource value: 0x7f060069
+			public const int DrawerWidth = 2131099753;
+			
 			// aapt resource value: 0x7f06000c
 			public const int abc_action_bar_content_inset_material = 2131099660;
 			
