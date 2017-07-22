@@ -1,5 +1,7 @@
 ﻿using System;
 using Android.App;
+using Android.Graphics;
+using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -25,9 +27,12 @@ namespace Greymind.Turns.Android
 
             var toolbar = FindViewById<global::Android.Support.V7.Widget.Toolbar>(Resource.Id.Toolbar);
             SetSupportActionBar(toolbar);
-            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu_white_24dp);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SupportActionBar.SetHomeButtonEnabled(true);
+
+            var menuDrawable = GetDrawable(Resource.Drawable.ic_menu_white_24dp);
+            TintDrawable(menuDrawable);
+            SupportActionBar.SetHomeAsUpIndicator(menuDrawable);
 
             var titles = new[] { "Activities", "Groups" };
             var adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, titles);
@@ -64,7 +69,20 @@ namespace Greymind.Turns.Android
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.TopMenu, menu);
+
+            for (int i = 0; i < menu.Size(); i++)
+            {
+                var itemDrawable = menu.GetItem(i).Icon;
+                TintDrawable(itemDrawable);
+            }
+
             return base.OnCreateOptionsMenu(menu);
+        }
+
+        private void TintDrawable(Drawable drawable)
+        {
+            drawable?.Mutate();
+            drawable?.SetColorFilter(Resources.GetColor(Resource.Color.GreymindWhite), PorterDuff.Mode.SrcIn);
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

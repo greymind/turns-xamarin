@@ -46,6 +46,9 @@
     android:layout_height="wrap_content"
     android:layout_gravity="end|bottom"
     android:layout_margin="@dimen/FabMargin"
-    android:src="@drawable/ic_menu_white_24dp"
-    app:backgroundTint="@color/GreymindGreyLight" />
+    app:borderWidth="0dp"
+    android:src="@drawable/ic_add_white_24dp"
+    android:tint="?android:attr/textColorPrimary"
+    app:backgroundTint="@color/GreymindGreyLight"
+    app:rippleColor="?android:attr/colorPrimary" />
 </android.support.design.widget.CoordinatorLayout>
