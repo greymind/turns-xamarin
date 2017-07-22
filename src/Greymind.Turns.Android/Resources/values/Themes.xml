@@ -3,12 +3,16 @@
 
   <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="android:windowBackground">@color/GreymindWhite</item>
+
     <item name="colorPrimary">@color/GreymindGrey</item>
     <item name="colorPrimaryDark">@color/GreymindGreyDark</item>
-    <item name="colorAccent">@color/GreymindGreyLight</item>
+    <item name="colorAccent">@color/GreymindWhiteLight</item>
+
     <item name="android:textColorPrimary">@color/GreymindWhite</item>
     <item name="android:textColorSecondary">@color/GreymindWhiteLight</item>
-    <item name="android:textColor">@color/GreymindGrey</item>
+    <item name="android:textColor">@color/GreymindWhite</item>
+
+    <item name="android:itemBackground">@color/GreymindGreyDark</item>
   </style>
 
   <style name="AppTheme" parent="AppBaseTheme">

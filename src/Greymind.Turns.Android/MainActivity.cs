@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -45,8 +46,8 @@ namespace Greymind.Turns.Android
             var fab = FindViewById<FloatingActionButton>(Resource.Id.Fab);
             fab.Click += (sender, e) =>
             {
-                Toast.MakeText(this, "Here's a snackbar!", ToastLength.Short)
-                    .Show();
+                Snackbar.Make(fab, "Here's a snackbar!", Snackbar.LengthLong).SetAction("Action",
+                    v => Console.WriteLine("Action handler")).Show();
             };
         }
 
