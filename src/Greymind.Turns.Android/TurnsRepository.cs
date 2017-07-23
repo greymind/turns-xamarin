@@ -47,14 +47,14 @@ namespace Greymind.Turns.Android
             people.Add(person);
         }
 
-        public void AddTurnForActivity(int activityId, int personId)
+        public void AddTurnForActivity(int activityId, int personId, DateTime? timestamp = null)
         {
             var turn = new Turn
             {
                 Id = turns.Count,
                 ActivityId = activityId,
                 PersonId = personId,
-                Timestamp = DateTime.UtcNow
+                Timestamp = timestamp ?? DateTime.UtcNow
             };
 
             turns.Add(turn);
@@ -108,12 +108,30 @@ namespace Greymind.Turns.Android
             activities
                 .ForEach(a => a.Group = groups.Single(g => g.Id == a.GroupId));
 
+            // Coffee Turns
+            AddTurnForActivity(0, 1, new DateTime(2017, 06, 05));
+            AddTurnForActivity(0, 2, new DateTime(2017, 06, 16));
+            AddTurnForActivity(0, 0, new DateTime(2017, 06, 23));
+            AddTurnForActivity(0, 2, new DateTime(2017, 07, 14));
+            AddTurnForActivity(0, 3, new DateTime(2017, 07, 19));
+
+            // Cake Turns
+            AddTurnForActivity(1, 3, new DateTime(2017, 06, 05));
+            AddTurnForActivity(1, 1, new DateTime(2017, 06, 16));
+            AddTurnForActivity(1, 0, new DateTime(2017, 06, 23));
+
             // McDonald's Turns
-            AddTurnForActivity(2, 0);
-            AddTurnForActivity(2, 4);
-            AddTurnForActivity(2, 0);
-            AddTurnForActivity(2, 4);
-            AddTurnForActivity(2, 4);
+            AddTurnForActivity(2, 0, new DateTime(2017, 06, 05));
+            AddTurnForActivity(2, 4, new DateTime(2017, 06, 16));
+            AddTurnForActivity(2, 0, new DateTime(2017, 06, 23));
+            AddTurnForActivity(2, 4, new DateTime(2017, 07, 14));
+            AddTurnForActivity(2, 4, new DateTime(2017, 07, 25));
+
+            // Sort activities
+            activities = activities
+                .OrderByDescending(a => a.Turns.Count)
+                .ThenByDescending(a => a.LatestTurnTimestamp)
+                .ToList();
 
             // Notes
             // Sort activities by most occurances > most recent turn

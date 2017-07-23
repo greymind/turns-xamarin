@@ -39,8 +39,12 @@ namespace Greymind.Turns.Android
         {
             var viewHolder = holder as ActivityViewHolder;
 
-            viewHolder.ActivityName.Text = activities[position].Name;
-            viewHolder.GroupName.Text = activities[position].Group.Name;
+            var activity = activities[position];
+
+            viewHolder.ActivityName.Text = activity.Name;
+            viewHolder.GroupName.Text = activity.Group.Name;
+            viewHolder.NextTurnPersonName.Text =
+                $"Next turn: {activity.GetNextTurnPersonName()}";
         }
     }
 }
