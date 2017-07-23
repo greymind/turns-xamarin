@@ -10,9 +10,7 @@ namespace Greymind.Turns.Android
 
         public override int Count => Titles.Length;
 
-        public TabsFragmentPagerAdapter(
-            global::Android.Support.V4.App.FragmentManager manager,
-            string[] titles)
+        public TabsFragmentPagerAdapter(FragmentManager manager, string[] titles)
             : base(manager)
         {
             Titles = titles;
@@ -23,7 +21,7 @@ namespace Greymind.Turns.Android
             return new Java.Lang.String(Titles[position]);
         }
 
-        public override global::Android.Support.V4.App.Fragment GetItem(int position)
+        public override Fragment GetItem(int position)
         {
             switch (position)
             {

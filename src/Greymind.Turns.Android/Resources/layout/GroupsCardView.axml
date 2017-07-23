@@ -35,7 +35,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/GreymindWhiteDark"
         android:text="Members"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="sans-serif-thin"
         android:id="@+id/Members"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="4dp" />
