@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Greymind.Turns.Android
@@ -8,6 +9,7 @@ namespace Greymind.Turns.Android
         private List<Activity> activities;
         private List<Group> groups;
         private List<Person> people;
+        private List<Turn> turns;
 
         public Activity[] GetActivities()
         {
@@ -22,6 +24,30 @@ namespace Greymind.Turns.Android
         public Person[] GetPeople()
         {
             return people.ToArray();
+        }
+
+        public Turn[] GetTurnsForActivity(int activityId)
+        {
+            return turns
+                .Where(t => t.ActivityId == activityId)
+                .ToArray();
+        }
+
+        public void AddTurnForActivity(int activityId, int personId)
+        {
+            var turn = new Turn
+            {
+                Id = turns.Count,
+                ActivityId = activityId,
+                PersonId = personId,
+                Timestamp = DateTime.UtcNow
+            };
+
+            turns.Add(turn);
+
+            var activity = activities.Single(a => a.Id == activityId);
+
+            activity.Turns.Add(turn);
         }
 
         public void AddMembersToGroup(int groupId, params int[] personIds)
@@ -58,12 +84,22 @@ namespace Greymind.Turns.Android
                 new Activity{ Id = 2, Name = "McDonald's", GroupId = 1},
             };
 
+            // Burek
             AddMembersToGroup(0, 0, 1, 2, 3);
+
+            // Unicorns
             AddMembersToGroup(1, 0, 4);
 
             // Populate group object based on group id
             activities
                 .ForEach(a => a.Group = groups.Single(g => g.Id == a.GroupId));
+
+            // McDonald's
+            AddTurnForActivity(2, 0);
+            AddTurnForActivity(2, 4);
+            AddTurnForActivity(2, 0);
+            AddTurnForActivity(2, 4);
+            AddTurnForActivity(2, 4);
         }
     }
 }
