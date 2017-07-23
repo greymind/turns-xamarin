@@ -1,5 +1,7 @@
 ﻿using Android.OS;
+using Android.Support.V7.Widget;
 using Android.Views;
+using Android.Widget;
 
 namespace Greymind.Turns.Android
 {
@@ -10,6 +12,22 @@ namespace Greymind.Turns.Android
             base.OnCreateView(inflater, container, savedInstanceState);
 
             var view = inflater.Inflate(Resource.Layout.ActivityFragment, null);
+
+            var recyclerView = view.FindViewById<RecyclerView>(Resource.Id.RecyclerView);
+            var layoutManager = new LinearLayoutManager(view.Context);
+
+            recyclerView.SetLayoutManager(layoutManager);
+
+            var activityAdapter = new ActivityAdapter(MainActivity.TurnsRepository);
+            activityAdapter.ItemClick += (sender, position) =>
+            {
+                Toast
+                    .MakeText(view.Context, $"Position: {position}", ToastLength.Short)
+                    .Show();
+            };
+
+            recyclerView.SetAdapter(activityAdapter);
+
             return view;
         }
     }
