@@ -103,8 +103,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity.cs" />
+    <Compile Include="GroupsAdapter.cs" />
     <Compile Include="ActivityAdapter.cs" />
     <Compile Include="ActivityFragment.cs" />
+    <Compile Include="GroupsViewHolder.cs" />
     <Compile Include="ActivityViewHolder.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="GroupsFragment.cs" />
@@ -128,6 +130,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ActivityFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\GroupsCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

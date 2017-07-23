@@ -33,6 +33,20 @@ namespace Greymind.Turns.Android
                 .ToArray();
         }
 
+        public void AddNewPerson(string name)
+        {
+            if (people.Any(p => p.Name == name))
+                return;
+
+            var person = new Person
+            {
+                Id = people.Count,
+                Name = name
+            };
+
+            people.Add(person);
+        }
+
         public void AddTurnForActivity(int activityId, int personId)
         {
             var turn = new Turn
@@ -62,14 +76,12 @@ namespace Greymind.Turns.Android
 
         public void InitializeMockData()
         {
-            people = new List<Person>
-            {
-                new Person{ Id = 0, Name = "Balki" },
-                new Person{ Id = 1, Name = "Mavi" },
-                new Person{ Id = 2, Name = "Martin" },
-                new Person{ Id = 3, Name = "Matko" },
-                new Person{ Id = 4, Name = "Petra" },
-            };
+            people = new List<Person>();
+            AddNewPerson("Balki");
+            AddNewPerson("Mavi");
+            AddNewPerson("Martin");
+            AddNewPerson("Matko");
+            AddNewPerson("Petra");
 
             groups = new List<Group>()
             {
@@ -84,6 +96,8 @@ namespace Greymind.Turns.Android
                 new Activity{ Id = 2, Name = "McDonald's", GroupId = 1},
             };
 
+            turns = new List<Turn>();
+
             // Burek
             AddMembersToGroup(0, 0, 1, 2, 3);
 
@@ -94,12 +108,18 @@ namespace Greymind.Turns.Android
             activities
                 .ForEach(a => a.Group = groups.Single(g => g.Id == a.GroupId));
 
-            // McDonald's
+            // McDonald's Turns
             AddTurnForActivity(2, 0);
             AddTurnForActivity(2, 4);
             AddTurnForActivity(2, 0);
             AddTurnForActivity(2, 4);
             AddTurnForActivity(2, 4);
+
+            // Notes
+            // Sort activities by most occurances > most recent turn
+            // Sort turns by timestamp desc
+            // Get next turn person by getting person with least turns
+            //  > oldest turn > random
         }
     }
 }
