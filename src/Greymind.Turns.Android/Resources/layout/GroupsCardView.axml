@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/GreymindWhiteDark"
         android:text="Members"
         android:id="@+id/Members"
         android:layout_gravity="center_horizontal"
