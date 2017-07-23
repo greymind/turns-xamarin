@@ -32,7 +32,7 @@ namespace Greymind.Turns.Android
                 .Select(g => new PersonTurns
                 {
                     PersonName = turnsRepository.GetPerson(g.Key).Name,
-                    TurnsCount = g.Count() + new Random().Next(20)
+                    TurnsCount = g.Count()
                 })
                 .OrderByDescending(t => t.TurnsCount)
                 .ToArray();
