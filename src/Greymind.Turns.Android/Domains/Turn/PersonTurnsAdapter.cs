@@ -10,31 +10,35 @@ namespace Greymind.Turns.Android
         private readonly TurnsRepository turnsRepository;
         private readonly int activityId;
 
-        private PersonTurns[] turns;
+        private PersonTurns[] personTurns;
 
         public event EventHandler<PersonTurns> ItemClick;
 
         public override int ItemCount
-            => turns.Length;
+            => personTurns.Length;
 
         public PersonTurnsAdapter(TurnsRepository turnsRepository, int activityId)
         {
             this.turnsRepository = turnsRepository;
             this.activityId = activityId;
 
-            ReloadTurns();
+            ReloadPersonTurns();
         }
 
-        private void ReloadTurns()
+        private void ReloadPersonTurns()
         {
-            turns = turnsRepository.GetTurnsForActivity(activityId)
+            personTurns = turnsRepository.GetTurnsForActivity(activityId)
                 .GroupBy(t => t.PersonId)
                 .Select(g => new PersonTurns
                 {
                     PersonName = turnsRepository.GetPerson(g.Key).Name,
-                    TurnsCount = g.Count()
+                    TurnsCount = g.Count(),
+                    LatestTurnTimestamp = g.Any()
+                        ? g.Max(t => t.Timestamp)
+                        : (DateTime?)null
                 })
                 .OrderByDescending(t => t.TurnsCount)
+                .ThenByDescending(t => t.LatestTurnTimestamp)
                 .ToArray();
         }
 
@@ -44,7 +48,7 @@ namespace Greymind.Turns.Android
                 .Inflate(Resource.Layout.PersonTurnCardView, parent, attachToRoot: false);
 
             var viewHolder = new PersonTurnsViewHolder(itemView,
-                (position) => ItemClick?.Invoke(this, turns[position]));
+                (position) => ItemClick?.Invoke(this, personTurns[position]));
 
             return viewHolder;
         }
@@ -53,7 +57,7 @@ namespace Greymind.Turns.Android
         {
             var viewHolder = holder as PersonTurnsViewHolder;
 
-            var turn = turns[position];
+            var turn = personTurns[position];
 
             viewHolder.PersonName.Text = turn.PersonName;
             viewHolder.TurnsCount.Text = turn.TurnsCount.ToString();
