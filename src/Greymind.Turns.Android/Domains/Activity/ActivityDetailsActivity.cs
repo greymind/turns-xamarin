@@ -42,17 +42,33 @@ namespace Greymind.Turns.Android
             var nextTurnPersonName = FindViewById<TextView>(Resource.Id.NextTurnPersonName);
             nextTurnPersonName.Text = $"Next turn: {activity.GetNextTurnPersonName()}";
 
-            var recyclerView = FindViewById<RecyclerView>(Resource.Id.RecyclerView);
-            var layoutManager = new LinearLayoutManager(ApplicationContext);
+            //
+            var personTurnsRecyclerView = FindViewById<RecyclerView>(Resource.Id.PersonTurnsRecyclerView);
+            {
+                var layoutManager = new LinearLayoutManager(ApplicationContext);
+                personTurnsRecyclerView.SetLayoutManager(layoutManager);
+            }
 
-            recyclerView.SetLayoutManager(layoutManager);
+            var personTurnsAdapter = new PersonTurnsAdapter(MainActivity.TurnsRepository, activityId);
+            personTurnsAdapter.ItemClick += (sender, turn) =>
+            {
+            };
+
+            personTurnsRecyclerView.SetAdapter(personTurnsAdapter);
+
+            //
+            var turnsRecyclerView = FindViewById<RecyclerView>(Resource.Id.TurnRecyclerView);
+            {
+                var layoutManager = new LinearLayoutManager(ApplicationContext);
+                turnsRecyclerView.SetLayoutManager(layoutManager);
+            }
 
             var turnAdapter = new TurnAdapter(MainActivity.TurnsRepository, activityId);
             turnAdapter.ItemClick += (sender, turn) =>
             {
             };
 
-            recyclerView.SetAdapter(turnAdapter);
+            turnsRecyclerView.SetAdapter(turnAdapter);
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

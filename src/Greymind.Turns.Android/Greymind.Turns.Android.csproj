@@ -111,7 +111,10 @@
     <Compile Include="Domains\Activity\ActivityViewHolder.cs" />
     <Compile Include="Domains\Group\Group.cs" />
     <Compile Include="Domains\Group\GroupsFragment.cs" />
+    <Compile Include="Domains\Turn\PersonTurnsAdapter.cs" />
+    <Compile Include="Domains\Turn\PersonTurns.cs" />
     <Compile Include="Domains\Turn\TurnAdapter.cs" />
+    <Compile Include="Domains\Turn\PersonTurnsViewHolder.cs" />
     <Compile Include="Domains\Turn\TurnViewHolder.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="MainActivity.cs" />
@@ -143,6 +146,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\TurnCardView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PersonTurnCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
