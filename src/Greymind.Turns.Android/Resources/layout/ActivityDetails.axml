@@ -20,56 +20,60 @@
       android:layout_height="wrap_content"
       android:minHeight="?android:attr/actionBarSize"
       android:background="?android:attr/colorPrimary" />
-    <LinearLayout
+    <ScrollView
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical"
-      android:paddingLeft="8dp"
-      android:paddingTop="24dp"
-      android:paddingRight="8dp"
-      android:paddingBottom="8dp">
-      <TextView
+      android:layout_height="match_parent">
+      <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="?android:attr/textColorPrimary"
-        android:text="ActivityName"
-        android:id="@+id/ActivityName"
-        android:fontFamily="sans-serif-light"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="4dp" />
-      <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/GreymindWhiteDark"
-        android:text="GroupName"
-        android:fontFamily="sans-serif-smallcaps"
-        android:id="@+id/GroupName"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="4dp" />
-      <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/GreymindWhiteDark"
-        android:text="NextTurnPersonName"
-        android:fontFamily="sans-serif-thin"
-        android:id="@+id/NextTurnPersonName"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="4dp" />
-    </LinearLayout>
-    <android.support.v7.widget.RecyclerView
-      android:id="@+id/PersonTurnsRecyclerView"
-      android:scrollbars="vertical"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:paddingTop="16dp" />
-    <android.support.v7.widget.RecyclerView
-      android:id="@+id/TurnRecyclerView"
-      android:scrollbars="vertical"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:paddingTop="16dp" />
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="24dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp">
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:textColor="?android:attr/textColorPrimary"
+          android:text="ActivityName"
+          android:id="@+id/ActivityName"
+          android:fontFamily="sans-serif-light"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="4dp" />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/GreymindWhiteDark"
+          android:text="GroupName"
+          android:fontFamily="sans-serif-smallcaps"
+          android:id="@+id/GroupName"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="4dp" />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/GreymindWhiteDark"
+          android:text="NextTurnPersonName"
+          android:fontFamily="sans-serif-thin"
+          android:id="@+id/NextTurnPersonName"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="4dp" />
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/PersonTurnsRecyclerView"
+          android:scrollbars="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="16dp" />
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/TurnRecyclerView"
+          android:scrollbars="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="16dp" />
+      </LinearLayout>
+    </ScrollView>
   </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

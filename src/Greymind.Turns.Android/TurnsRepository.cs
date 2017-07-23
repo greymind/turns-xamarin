@@ -131,7 +131,7 @@ namespace Greymind.Turns.Android
             AddTurnForActivity(2, 4, new DateTime(2017, 06, 16));
             AddTurnForActivity(2, 0, new DateTime(2017, 06, 23));
             AddTurnForActivity(2, 4, new DateTime(2017, 07, 14));
-            AddTurnForActivity(2, 4, new DateTime(2017, 07, 25));
+            AddTurnForActivity(2, 4, new DateTime(2017, 07, 19));
 
             // Sort activities
             activities = activities

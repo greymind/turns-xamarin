@@ -45,7 +45,7 @@ namespace Greymind.Turns.Android
             //
             var personTurnsRecyclerView = FindViewById<RecyclerView>(Resource.Id.PersonTurnsRecyclerView);
             {
-                var layoutManager = new LinearLayoutManager(ApplicationContext);
+                var layoutManager = new NoScrollLinearLayoutManager(ApplicationContext);
                 personTurnsRecyclerView.SetLayoutManager(layoutManager);
             }
 
@@ -59,7 +59,7 @@ namespace Greymind.Turns.Android
             //
             var turnsRecyclerView = FindViewById<RecyclerView>(Resource.Id.TurnRecyclerView);
             {
-                var layoutManager = new LinearLayoutManager(ApplicationContext);
+                var layoutManager = new NoScrollLinearLayoutManager(ApplicationContext);
                 turnsRecyclerView.SetLayoutManager(layoutManager);
             }
 
