@@ -9,7 +9,7 @@ namespace Greymind.Turns.Android
         private readonly TurnsRepository turnsRepository;
         private Activity[] activities;
 
-        public event EventHandler<int> ItemClick;
+        public event EventHandler<Activity> ItemClick;
 
         public override int ItemCount
             => activities.Length;
@@ -30,7 +30,8 @@ namespace Greymind.Turns.Android
             var itemView = LayoutInflater.From(parent.Context)
                 .Inflate(Resource.Layout.ActivityCardView, parent, attachToRoot: false);
 
-            var viewHolder = new ActivityViewHolder(itemView, (position) => ItemClick?.Invoke(this, position));
+            var viewHolder = new ActivityViewHolder(itemView,
+                (position) => ItemClick?.Invoke(this, activities[position]));
 
             return viewHolder;
         }
@@ -43,8 +44,7 @@ namespace Greymind.Turns.Android
 
             viewHolder.ActivityName.Text = activity.Name;
             viewHolder.GroupName.Text = activity.Group.Name;
-            viewHolder.NextTurnPersonName.Text =
-                $"Next turn: {activity.GetNextTurnPersonName()}";
+            viewHolder.NextTurnPersonName.Text = $"Next turn: {activity.GetNextTurnPersonName()}";
         }
     }
 }

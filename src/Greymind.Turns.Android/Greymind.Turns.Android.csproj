@@ -102,23 +102,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity.cs" />
-    <Compile Include="GroupsAdapter.cs" />
-    <Compile Include="ActivityAdapter.cs" />
-    <Compile Include="ActivityFragment.cs" />
-    <Compile Include="GroupsViewHolder.cs" />
-    <Compile Include="ActivityViewHolder.cs" />
-    <Compile Include="Group.cs" />
-    <Compile Include="GroupsFragment.cs" />
+    <Compile Include="Domains\Activity\Activity.cs" />
+    <Compile Include="Domains\Activity\ActivityDetailsActivity.cs" />
+    <Compile Include="Domains\Group\GroupsAdapter.cs" />
+    <Compile Include="Domains\Activity\ActivityAdapter.cs" />
+    <Compile Include="Domains\Activity\ActivityFragment.cs" />
+    <Compile Include="Domains\Group\GroupsViewHolder.cs" />
+    <Compile Include="Domains\Activity\ActivityViewHolder.cs" />
+    <Compile Include="Domains\Group\Group.cs" />
+    <Compile Include="Domains\Group\GroupsFragment.cs" />
+    <Compile Include="Domains\Turn\TurnAdapter.cs" />
+    <Compile Include="Domains\Turn\TurnViewHolder.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Domains\People\Person.cs" />
     <AndroidResource Include="Resources\layout\ActivityCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TabsFragmentPagerAdapter.cs" />
-    <Compile Include="Turn.cs" />
+    <Compile Include="Domains\Turn\Turn.cs" />
     <Compile Include="TurnsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +137,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\GroupsCardView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ActivityDetails.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TurnCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -203,6 +213,36 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_add_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldrtl-hdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldrtl-mdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldrtl-xhdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldrtl-xxxhdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-ldrtl-xxhdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_arrow_back_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_arrow_back_white_24dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

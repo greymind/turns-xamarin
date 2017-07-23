@@ -26,6 +26,12 @@ namespace Greymind.Turns.Android
             return people.ToArray();
         }
 
+        public Person GetPerson(int id)
+        {
+            return people
+                .Single(p => p.Id == id);
+        }
+
         public Turn[] GetTurnsForActivity(int activityId)
         {
             return turns
@@ -138,6 +144,9 @@ namespace Greymind.Turns.Android
             // Sort turns by timestamp desc
             // Get next turn person by getting person with least turns
             //  > oldest turn > random
+            // Nav menu
+            //  Privacy
+            //
         }
     }
 }

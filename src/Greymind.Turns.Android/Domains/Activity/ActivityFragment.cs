@@ -1,7 +1,7 @@
-﻿using Android.OS;
+﻿using Android.Content;
+using Android.OS;
 using Android.Support.V7.Widget;
 using Android.Views;
-using Android.Widget;
 
 namespace Greymind.Turns.Android
 {
@@ -19,11 +19,11 @@ namespace Greymind.Turns.Android
             recyclerView.SetLayoutManager(layoutManager);
 
             var activityAdapter = new ActivityAdapter(MainActivity.TurnsRepository);
-            activityAdapter.ItemClick += (sender, position) =>
+            activityAdapter.ItemClick += (sender, activity) =>
             {
-                Toast
-                    .MakeText(view.Context, $"Position: {position}", ToastLength.Short)
-                    .Show();
+                var intent = new Intent(view.Context, typeof(ActivityDetailsActivity));
+                intent.PutExtra("ActivityId", activity.Id);
+                StartActivity(intent);
             };
 
             recyclerView.SetAdapter(activityAdapter);

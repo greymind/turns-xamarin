@@ -1,7 +1,5 @@
 ﻿using System;
 using Android.App;
-using Android.Graphics;
-using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -21,9 +19,9 @@ namespace Greymind.Turns.Android
         private ViewPager viewPager;
         private PagerSlidingTabStrip tabs;
 
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Main);
 
@@ -33,7 +31,7 @@ namespace Greymind.Turns.Android
             SupportActionBar.SetHomeButtonEnabled(true);
 
             var menuDrawable = GetDrawable(Resource.Drawable.ic_menu_white_24dp);
-            TintDrawable(menuDrawable);
+            Helper.TintDrawable(Resources, menuDrawable);
             SupportActionBar.SetHomeAsUpIndicator(menuDrawable);
 
             var titles = new[] { "Activities", "Groups" };
@@ -80,16 +78,10 @@ namespace Greymind.Turns.Android
             for (int i = 0; i < menu.Size(); i++)
             {
                 var itemDrawable = menu.GetItem(i).Icon;
-                TintDrawable(itemDrawable);
+                Helper.TintDrawable(Resources, itemDrawable);
             }
 
             return base.OnCreateOptionsMenu(menu);
-        }
-
-        private void TintDrawable(Drawable drawable)
-        {
-            drawable?.Mutate();
-            drawable?.SetColorFilter(Resources.GetColor(Resource.Color.GreymindWhite), PorterDuff.Mode.SrcIn);
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
