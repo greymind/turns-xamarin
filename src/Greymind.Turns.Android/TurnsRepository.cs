@@ -120,6 +120,7 @@ namespace Greymind.Turns.Android
             AddTurnForActivity(0, 0, new DateTime(2017, 06, 23));
             AddTurnForActivity(0, 2, new DateTime(2017, 07, 14));
             AddTurnForActivity(0, 3, new DateTime(2017, 07, 19));
+            AddTurnForActivity(0, 3, new DateTime(2017, 07, 27));
 
             // Cake Turns
             AddTurnForActivity(1, 3, new DateTime(2017, 06, 05));
