@@ -97,9 +97,9 @@ namespace Greymind.Turns.Android
 
             activities = new List<Activity>
             {
-                new Activity{ Id = 0, Name = "Coffee", GroupId = 0},
-                new Activity{ Id = 1, Name = "Cake", GroupId = 0},
-                new Activity{ Id = 2, Name = "McDonald's", GroupId = 1},
+                new Activity{ Id = 0, Name = "Coffee", GroupId = 0 },
+                new Activity{ Id = 1, Name = "Cake", GroupId = 0 },
+                new Activity{ Id = 2, Name = "McDonald's", GroupId = 1 },
             };
 
             turns = new List<Turn>();
