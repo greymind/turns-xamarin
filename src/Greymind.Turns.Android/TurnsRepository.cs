@@ -121,6 +121,7 @@ namespace Greymind.Turns.Android
             AddTurnForActivity(0, 2, new DateTime(2017, 07, 14));
             AddTurnForActivity(0, 3, new DateTime(2017, 07, 19));
             AddTurnForActivity(0, 3, new DateTime(2017, 07, 27));
+            AddTurnForActivity(0, 3, new DateTime(2017, 08, 30));
 
             // Cake Turns
             AddTurnForActivity(1, 3, new DateTime(2017, 06, 05));
@@ -128,6 +129,8 @@ namespace Greymind.Turns.Android
             AddTurnForActivity(1, 0, new DateTime(2017, 06, 23));
             AddTurnForActivity(1, 2, new DateTime(2017, 07, 25));
             AddTurnForActivity(1, 1, new DateTime(2017, 08, 03));
+            AddTurnForActivity(1, 3, new DateTime(2017, 09, 08));
+            AddTurnForActivity(1, 0, new DateTime(2017, 09, 15));
 
             // McDonald's Turns
             AddTurnForActivity(2, 0, new DateTime(2017, 06, 05));
